@@ -1,0 +1,22 @@
+{
+  "name": "bottwitch",
+  "version": "1.0.0",
+  "description": "bot chat for Twitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrespz07/BotTwitch.git"
+  },
+  "author": "Andrés Alberto Pérez Ortega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrespz07/BotTwitch/issues"
+  },
+  "homepage": "https://github.com/Andrespz07/BotTwitch#readme",
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
+}

@@ -10,13 +10,12 @@ const client = new tmi.Client({
 
 client.connect();
 
-client.on('connected', (address, port) => {
-    client.action('andrespz07', `Hola andrés conectado a ${address}:${port}`)
+client.on('connected', () => {
   console.log('El bot se ha conectado al chat de Twitch');
 
   // Lógica para enviar un mensaje cada 4 minutos
   setInterval(() => {
-    client.say('el_yuste', '¡Hola!');
+    client.say('BaityBait', '¡Hola!');
   }, 4 * 60 * 1000); // Intervalo de 4 minutos en milisegundos
 });
 

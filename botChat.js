@@ -11,9 +11,10 @@ const client = new tmi.Client({
 client.connect();
 
 client.on('connected', () => {
+  console.log('El bot se ha conectado al chat de Twitch');
 
   setInterval(() => {
-    client.say('BaityBait', '¡Hola!');
-  }, 4 * 60 * 1000);
+    client.say('BaityBait', 'DoritosChip');
+  }, 1 * 60 * 1000);
 });
 

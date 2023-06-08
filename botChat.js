@@ -15,6 +15,6 @@ client.on('connected', () => {
 
   setInterval(() => {
     client.say('BaityBait', 'DoritosChip');
-  }, 1 * 60 * 1000);
+  }, 3 * 60 * 1000);
 });
 

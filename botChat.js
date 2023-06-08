@@ -11,20 +11,9 @@ const client = new tmi.Client({
 client.connect();
 
 client.on('connected', () => {
-  console.log('El bot se ha conectado al chat de Twitch');
 
-  // Lógica para enviar un mensaje cada 4 minutos
   setInterval(() => {
     client.say('BaityBait', '¡Hola!');
-  }, 4 * 60 * 1000); // Intervalo de 4 minutos en milisegundos
+  }, 4 * 60 * 1000);
 });
 
-// client.on('chat', (channel, user, message, self) => {
-//   // Aquí puedes agregar la lógica para responder a mensajes específicos del chat.
-//   // Por ejemplo, si alguien escribe "!saludo", el bot puede responder con un saludo.
-
-//   if (message === '!saludo') {
-//     client.say(channel, `¡Hola, ${user.username}! ¿Cómo estás?`);
-//   }
-// }
-// );
